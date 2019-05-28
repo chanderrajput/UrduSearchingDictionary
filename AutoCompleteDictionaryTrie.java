@@ -111,6 +111,11 @@ public class AutoCompleteDictionaryTrie
                 }
         }
         getChildren(temp.children);
+        
+        for (int i=0;i<nodeWords.size();i++)
+        {
+            System.out.println(searchWord+nodeWords.get(i));
+        }
 
     }
 
@@ -129,15 +134,6 @@ public class AutoCompleteDictionaryTrie
             nodeWords.add(tempWord);
         tempWord="";
 
-    }
-
-    public void print()
-    {
-        for (int i=0;i<nodeWords.size();i++)
-        {
-            System.out.println(searchWord+nodeWords.get(i));
-
-        }
     }
 
 }
